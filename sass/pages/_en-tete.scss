@@ -1,0 +1,25 @@
+.localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+    box-shadow: 0px 0px 1px inset;
+    
+}
+
+.fa-map-marker-alt:before{
+    margin-right: 3vh;
+}
+
+.en-tete
+{
+   text-align: center;  
+   background-color: rgb(246, 246, 246) ;
+
+   
+   &__titre{
+       margin: 26px;
+   }
+   
+   
+}

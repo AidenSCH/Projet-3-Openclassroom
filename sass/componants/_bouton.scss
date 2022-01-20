@@ -1,0 +1,22 @@
+.bouton{
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    cursor: pointer;
+    transition-duration: .25s;
+    margin-bottom: 8vh;
+
+    &:hover {
+        background-color: white;
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+      }
+
+    
+      
+    
+}

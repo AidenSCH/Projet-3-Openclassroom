@@ -2,9 +2,163 @@
 <html>
     <head>
         <meta name="viewport" content="widh=device-widh, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants.">
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/20d853d314.js" crossorigin="anonymous"></script>
+        <titre></titre>
     </head>
+    <body>
+
+
+        <!--chargement-->
+
+        <div class="loader">
+            <div class="loader__itemContainer">
+              <div class="loader__item loader__item--1"></div>
+              <div class="loader__item loader__item--2"></div>
+              <div class="loader__item loader__item--3"></div>
+            </div>
+          </div>
+
+
+         <!--Header-->
+
+
+         <header>
+             <img class="header__logo" src="images/logo/ohmyfood.png" alt="Logo ohmyfood" />
+             <div class="localisation">
+                 <i class="fas fa-map-marker-alt"></i>
+                 <p>Paris, Belleville</p>
+             </div>
+         </header>
+         <section class="en-tete">
+            <div class="en-tete__titre">
+                <h1> Réservez le menu qui vous convient</h1>
+            </div>    
+             <p>Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
+            <a>
+                <form>
+                    <imput type="button" onclick="" >
+                    <button class="bouton">
+                        <span>Explorez nos restaurant</span>
+                    </button>
+                </form>
+            </a>    
+         </section>
+         
+         
+         <h2 class="fonctionnement__titre">Fonctionnement</h2>
+        <ol class="fonctionnement">
+             <li class="fonctionnement__carte">
+                <i class="fas fa-mobile-alt fonctionnement__icone"></i>
+                <p>Choisissez un restaurant</p>
+             </li>
+             <li class="fonctionnement__carte">
+                <i class="fas fa-list-ul fonctionnement__icone"></i>
+                <p>Composez votre menu</p>
+             </li>
+             <li class="fonctionnement__carte">
+                <i class="fas fa-store fonctionnement__icone"></i>
+                <p>Dégustez au restaurant</p>
+             </li>
+        </ol>
+
+         <!--MAIN-->
+
+
+         <main>
+             <h2 class="main__titre">Restaurants</h2>
+            <div class="cartes">
+                <a  href="lapalettedugout.html">
+                    <div class="main__carte">
+                        <img class="main__carte__img" src="images/restaurants/la_palette_du_gout.jpg" alt="image restaurant la palette du gout">
+                        <span class="main__carte__badge">Nouveau</span>
+                        <div class="main__carte__footer">
+                            <div class="main__carte__description">
+                                <h3 class="main__carte__titre">La palette du goût</h3>
+                                <p class="main__carte__contenu">Ménilmontant</p>
+                            </div>
+                            <div class="main__carte__bouton menu__bouton">
+                                <i class="main__carte__like menu__like--noRpt fas fa-heart fa-2x"></i>
+                                <i class="main__carte__like menu__like--Rpt far fa-heart fa-2x"></i>
+                            </div>                      
+                        </div>
+                    </div>    
+                </a>
+
+                <a href="lanoteenchantee.html">
+                    <div class="main__carte">
+                            <img class="main__carte__img" src="images/restaurants/la_note_enchantee.jpg" alt="image restaurant la note enchantée">
+                            <span class="main__carte__badge">Nouveau</span>
+                        <div class="main__carte__footer">   
+                            <div class="main__carte__description">
+                                <h3 class="main__carte__titre">La note enchantée</h3>
+                                <p class="main__carte__contenu" >Charonne</p>
+                            </div>
+                            <div class="main__carte__bouton">   
+                                <i class="main__carte__like menu__like--noRpt fas fa-heart fa-2x"></i> 
+                                <i class="main__carte__like menu__like--Rpt far fa-heart fa-2x"></i>                       
+                            </div>
+                        </div>
+                    </div> 
+                </a>
+
+                <a href="alafrancaise.html">
+                    <div class="main__carte">
+                        <img class="main__carte__img" src="images/restaurants/a_la_francaise.jpg" alt=" image restaurant a la française">
+                    
+                        <div class="main__carte__footer">
+                            <div class="main__carte__description">
+                                <h3 class="main__carte__titre">A la française</h3>
+                                <p class="main__carte__contenu">Cité Rouge</p>
+                            </div>    
+                            <div class="main__carte__bouton"> 
+                                <i class="main__carte__like menu__like--noRpt fas fa-heart fa-2x"></i>   
+                                <i class="main__carte__like menu__like--Rpt far fa-heart fa-2x"></i>                       
+                            </div>
+                        </div>    
+                    </div>
+                </a>
+
+                <a href="ledelicedessens.html">
+                    <div class="main__carte">
+                        <img class="main__carte__img" src="images/restaurants/le_delice_des_sens.jpg" alt="image restaurant le delice des sens">
+                        
+                        <div class="main__carte__footer">
+                            <div class="main__carte__description">
+                                <h3 class="main__carte__titre">Le délice des sens</h3>
+                                <p class="main__carte__contenu">Folie-Méricourt</p>
+                            </div>
+                            <div class="main__carte__bouton">
+                                <i class="main__carte__like menu__like--noRpt fas fa-heart fa-2x"></i>
+                                <i class="main__carte__like menu__like--Rpt far fa-heart fa-2x"></i>                        
+                            </div>
+                        </div>
+                    </div>
+                </a>    
+            </div>
+         </main>
+         
+         <!--FOOTER-->
+         <footer class="footer">
+            <div class="footer__conteneur">
+                <span class="footer__logo">ohmyfood</span>
+                <ul class="footer__liste">
+                    <li class="footer__listeMlk"><a class="footer__link" href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                <li class="footer__listeMlk"><a class="footer__link" href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
+                <li class="footer__listeMlk"><a class="footer__link" href="#">Mentions légales</a></li>       
+                <li class="footer__listMlk"><a class="footer__link" href="mailto:contact@ohmyfood.com">contact</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+   
+
 </html>

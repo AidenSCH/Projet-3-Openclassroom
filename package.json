@@ -1,0 +1,19 @@
+{
+  "name": "oui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AidenSCH/Projet-3-Openclassroom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AidenSCH/Projet-3-Openclassroom/issues"
+  },
+  "homepage": "https://github.com/AidenSCH/Projet-3-Openclassroom#readme"
+}

@@ -1,0 +1,202 @@
+.header--avecArrow{
+    display: flex;
+    align-items: center;
+    position: relative ;
+}
+
+.header__arrow{
+    position: absolute;
+    left: 20px;
+font-size: 1.5rem;
+top: 40%;
+color: black;
+ 
+}
+
+
+.image_principal{
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;    
+    object-fit: cover;
+}
+
+.cartes__menus{
+    @media (min-width:1280px){
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+}
+
+.menu{
+    z-index: 1;
+    position:relative ;
+    margin-top: -50px;
+    border-radius: 40px 40px 0 0 ; 
+     
+    
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem 0 1rem;
+    }
+
+    &__bouton{
+        height: 2rem;
+        width: 2rem;
+        background-color: transparent;
+        border: transparent 0px solid;
+        padding: 0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        cursor: pointer;
+        position: relative;
+        background-color: black;
+
+        &:hover::before {
+            opacity: 1;
+          }
+          
+          &::before {
+            opacity: 0;
+            transition: 0.5s;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background:linear-gradient(0deg, $couleur_primaire 0%,$couleur_secondaire 100%);
+          }
+
+
+
+    }
+
+    &__carte{
+        margin: 1rem;
+    }
+    &__carte__composition{
+        background-color: white;
+        padding: 1rem;
+        display: flex;
+        border-radius: 0.75rem;
+        margin: 1rem 0;
+        box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        cursor: pointer;
+        animation: itemAppear .6s;
+        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        animation-fill-mode: both;
+        transform: scale(0);
+        max-width: 100%;
+    }  
+
+    &__carte__Grandtitre{
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 0.5rem;
+        font-weight: normal;
+        margin-left: 1rem;
+        &::after {
+            content: "";
+            width: 3rem;
+            height: 0.25rem;
+            background-color: $couleur_tertiaire;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        
+        
+    }
+
+    &__carte__header{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    &__carte__titre{
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__carte__description{
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__carte__prix{
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 0.5rem;
+    }
+
+    &__carte__confirmation{
+        background-color: $couleur_tertiaire;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition-duration: .5s;
+    }
+
+    &__carte__icone{
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+    }
+
+      
+
+
+      &__carte__iconeValide{
+          color: $couleur_tertiaire;
+      }
+}
+
+.menu__carte__composition{
+&:hover .menu__carte__icone {
+    transform: rotate(0);
+  }
+
+  &:hover .menu__carte__confirmation {
+    margin-right: -1rem;
+  }
+
+}
+
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay:  #{$i/10}s;
+    }
+  }
+
+  .boutonMenu{
+      margin-left: 14vh;
+      margin-top: 50px;
+
+
+      @media (min-width: 1280px){
+          margin-left: 70vh;
+      }
+  }
+

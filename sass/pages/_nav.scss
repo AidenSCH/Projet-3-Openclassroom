@@ -1,0 +1,63 @@
+.fonctionnement{
+    margin:   0px;
+    padding: 0px; 
+    counter-reset: compteListe;    
+    @media (min-width: 1280px){
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+
+
+
+.fonctionnement__carte{
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+    @media (min-width: 1280px){
+        margin-left: 9vh ;
+    }
+    
+    
+    
+}
+
+
+.fonctionnement__icone{
+    font-size: 3vh ;
+    margin-top: 1.2vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    color: gray;
+
+}
+
+.fonctionnement__carte::before{
+    counter-increment: compteListe ;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -0.90rem;
+    top: 30px;
+}
+
+.fonctionnement__carte p {
+    font-weight: bold;
+}
+
+.fonctionnement__titre{
+    margin-left:20px;
+}
+
